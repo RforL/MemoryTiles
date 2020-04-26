@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/panel"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mn_playboard"
+        >
+
+        <ImageView
+            android:id="@+id/p1_av"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/av_male"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <ImageView
+            android:id="@+id/p1_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_active"
+            android:layout_alignRight="@id/p1_av"
+            android:layout_alignBottom="@id/p1_av"
+            android:layout_marginRight="8dp"/>
+
+        <ImageView
+            android:id="@+id/p2_av"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/av_female"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            />
+
+        <ImageView
+            android:id="@+id/p2_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_active"
+            android:layout_alignRight="@id/p2_av"
+            android:layout_alignBottom="@id/p2_av"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p1_av"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/montserrat_thin"
+            android:text="Player 1"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p2_av"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/montserrat_thin"
+            android:text="Player 2"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/winner_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p1_av"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="99dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="0 - 0"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_endgame"
+        android:layout_width="250px"
+        android:layout_height="90px"
+        android:background="@drawable/btn_endgame1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

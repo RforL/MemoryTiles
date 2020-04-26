@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".practice_end_activity"
+    android:background="@drawable/bckgrd_practiceend">
+
+
+    //Winner Items
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/av_male_enlarged"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/player_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You scored"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/avatar"
+        />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 points"
+        android:fontFamily="@font/montserrat_thin"
+        android:layout_below="@id/player_text"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="1dp"
+        />
+
+    <TextView
+        android:id="@+id/flips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Within"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/score"
+        />
+
+    <TextView
+        android:id="@+id/flips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 flips"
+        android:fontFamily="@font/montserrat_thin"
+        android:layout_below="@id/flips_text"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="1dp"
+        />
+
+    //Buttons
+    <ImageButton
+        android:id="@+id/btn_practice_rematch"
+        android:layout_width="250px"
+        android:layout_height="90px"
+        android:layout_below="@id/flips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_newgame" />
+
+    <ImageButton
+        android:id="@+id/btn_practice_sizes"
+        android:layout_width="250px"
+        android:layout_height="90px"
+        android:layout_below="@id/btn_practice_rematch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_changesizes2" />
+
+    <ImageButton
+        android:id="@+id/btn_practice_menu"
+        android:layout_width="250px"
+        android:layout_height="90px"
+        android:layout_below="@id/btn_practice_sizes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_mainmenu2" />
+
+</RelativeLayout>

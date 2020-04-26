@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/panel"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mn_practiceboard"
+        >
+
+        <ImageView
+            android:id="@+id/p1_av"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/av_male_enlarged"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/p1_av"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/montserrat_thin"
+            android:text="You"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/winner_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p1"
+            android:layout_toRightOf="@id/p1_av"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Score: 0"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/flips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/winner_score"
+            android:layout_toRightOf="@id/p1_av"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Flips: 0"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_endgame"
+        android:layout_width="250px"
+        android:layout_height="90px"
+        android:background="@drawable/btn_endgame2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

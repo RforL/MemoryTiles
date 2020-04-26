@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/practice_background"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header"
+                android:text="Memory Tiles"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_light"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header"
+                android:text="Practice"
+                android:textSize="14sp"
+                android:layout_marginTop="6sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/montserrat_light"
+                />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/logo"
+                android:layout_width="62dp"
+                android:layout_height="62dp"/>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_marginTop="50dp"
+            android:columnCount="1"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/easy_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_row="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/easy_icon"
+                        android:src="@drawable/card_4x4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:id="@+id/easy_text"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@color/black"
+                        android:textSize="32sp"
+                        android:text="Easy"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_toRightOf="@id/easy_icon"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:text="Play a 4x4 game"
+                        android:fontFamily="@font/montserrat_light"
+                        android:layout_toRightOf="@id/easy_icon"
+                        android:layout_below="@id/easy_text"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hard_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_row="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/hard_icon"
+                        android:src="@drawable/card_6x6"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:id="@+id/hard_text"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@color/black"
+                        android:textSize="32sp"
+                        android:text="Hard"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_toRightOf="@id/hard_icon"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:text="Play a 6x6 game"
+                        android:fontFamily="@font/montserrat_light"
+                        android:layout_toRightOf="@id/hard_icon"
+                        android:layout_below="@id/hard_text"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/back_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_row="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/back_icon"
+                        android:src="@drawable/back_arrow"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:id="@+id/back_text"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@color/black"
+                        android:textSize="32sp"
+                        android:text="Back"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_toRightOf="@id/back_icon"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:text="Back to Main Menu"
+                        android:fontFamily="@font/montserrat_light"
+                        android:layout_toRightOf="@id/back_icon"
+                        android:layout_below="@id/back_text"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

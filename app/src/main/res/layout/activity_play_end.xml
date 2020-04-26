@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".play_end_activity"
+    android:background="@drawable/bckgrd_playend">
+    
+    
+    //Winner Items
+    <ImageView
+        android:id="@+id/winner"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/av_male_enlarged"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        />
+    
+    <TextView
+        android:id="@+id/winner_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 \nWins!"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/winner"
+        />
+
+    <TextView
+        android:id="@+id/winner_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 points"
+        android:fontFamily="@font/montserrat_thin"
+        android:layout_toRightOf="@id/winner"
+        android:layout_below="@id/winner_text"
+        android:textSize="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        />
+    
+    //Loser items
+    <ImageView
+        android:id="@+id/loser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/av_female_enlarged"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/winner"
+        />
+
+    <TextView
+        android:id="@+id/loser_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2!"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/loser"
+        android:layout_below="@id/winner"
+        />
+
+    <TextView
+        android:id="@+id/loser_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 points"
+        android:fontFamily="@font/montserrat_thin"
+        android:layout_toRightOf="@id/loser"
+        android:layout_below="@id/loser_text"
+        android:textSize="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    //Draw
+
+    //Buttons
+
+    <ImageButton
+        android:id="@+id/btn_practice_rematch"
+        android:layout_width="250px"
+        android:layout_height="90px"
+        android:layout_below="@id/loser"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_rematch" />
+
+    <ImageButton
+        android:id="@+id/btn_practice_sizes"
+        android:layout_width="250px"
+        android:layout_height="90px"
+        android:layout_below="@id/btn_practice_rematch"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_changesizes1" />
+
+    <ImageButton
+        android:id="@+id/btn_practice_menu"
+        android:layout_width="250px"
+        android:layout_height="90px"
+        android:layout_below="@id/btn_practice_sizes"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_mainmenu1" />
+
+</RelativeLayout>

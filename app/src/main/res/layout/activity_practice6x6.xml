@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPractice6x6"
+    android:background="@drawable/practice_background"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header_text"
+            android:text="Memory Tiles"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_text"
+            android:text="Practice - 6x6"
+            android:textSize="14sp"
+            android:layout_marginTop="6sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/montserrat_light"
+            />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo"
+            android:layout_width="31dp"
+            android:layout_height="31dp"/>
+
+    </RelativeLayout>
+
+    //Game Grid
+    <include
+        layout="@layout/grid6x6"
+        android:layout_width="wrap_content"
+        android:layout_height="550dp"
+        android:layout_above="@id/panel"
+        android:layout_below="@id/header"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    //Bottom Bar
+    <include
+        android:id="@+id/panel"
+        layout="@layout/practice_panel"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
